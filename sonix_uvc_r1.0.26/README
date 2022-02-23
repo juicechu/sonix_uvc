@@ -1,0 +1,18 @@
+1. How to compile sonix uvc driver:
+    1.1 enter correct folder
+    for linux kernel 2.6.28, 2.6.30, 2.6.36, 3.0.8 3.0.35, and 3.0.36 
+    $ cd sonix_uvc_r1.0.x/uvc_2.6.36
+	
+    or for linux kernel 3.3.8, 3.8.13, 3.10.36, 3.10.49, 3.10.58, and 3.18.0
+    $cd sonix_uvc_r1.0.x/uvc_3.3.8
+    
+    Modify Makefile to build driver for Linux PC alone
+    $ cp Makefile.x86 Makefile
+    $ make
+
+2. How to insert sonix uvc driver:
+    Connecet your 291B/292 camera module and remove Linux default uvc driver before inserting sonix uvc module
+    $ sudo rmmod uvcvideo
+    $ insmod sonix_uvcvideo.ko 
+    
+    

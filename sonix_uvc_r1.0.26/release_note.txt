@@ -1,0 +1,34 @@
+v1.0.15
+1. Support driver can execute in 3.3.8 kernel(in folder uvc_3.3.8)
+
+v1.0.16
+1. add new xu control:V4L2_CID_FLASH_CTRL
+2. trasmit MaxPayloadTransferSize to AP through ioctl VIDIOC_G_PARM
+3. fix ioctl VIDIOC_DQBUF has EAGAIN(-11) error in block mode
+
+v1.0.17
+1. support kernel 3.0.35 and kernel 3.0.36
+
+v1.0.18
+1. support kernel 3.10.36
+
+v1.0.19
+1. support kernel 3.8.13
+
+v1.0.20
+1. support still function(method 2)
+
+v1.0.21
+1. support kernel 3.0.8
+
+v1.0.22
+1.  support kernel 3.10.49, 3.10.58
+
+v1.0.23
+1.  support CONFIG_COMPAT
+
+v1.0.24
+1. support kernel 3.18.0
+
+v1.0.25
+1. fix 2930 preview hang in kernel 3.18.0
